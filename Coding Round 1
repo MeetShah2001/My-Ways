@@ -1,8 +1,6 @@
 function fizzBuzz(phoneNumber) {
-  // Calculate the sum of the phone number's digits
   const phoneNumberSum = [...phoneNumber].filter((char) => !isNaN(char)).reduce((acc, val) => acc + parseInt(val), 0);
   
-  // Loop from 1 to the sum of the phone number's digits
   for (let i = 1; i <= phoneNumberSum; i++) {
     if (i % 4 === 0 && i % 5 === 0) {
       console.log("FizzBuzz");
@@ -15,3 +13,5 @@ function fizzBuzz(phoneNumber) {
     }
   }
 }
+
+fizzBuzz(8980450882);
